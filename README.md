@@ -5,8 +5,8 @@ Documentation for the upcoming v0.2 release of [Goal Tools](https://goaltools.pw
 The site is powered by [Jekyll](https://jekyllrb.com). To compile and view it locally do the following:
 
 ```bash
-# Install the Jekyll and all necessary dependencies.
-gem install jekyll redkarpet pygments
+# Install the Jekyll and this project's dependencies.
+gem install jekyll redcarpet pygments.rb
 
 # Clone this repository.
 git clone git@github.com:goaltools/goaltools.pw.git
