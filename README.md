@@ -1,24 +1,27 @@
-# colegion.github.io/goal
-Documentation for the [Goal Toolkit](https://github.com/colegion/goal).
+# goaltools.pw
+Documentation for the upcoming v0.2 release of [Goal Tools](https://goaltools.pw/).
 
-The [Jekyll](https://jekyllrb.com) powered site is located at [colegion.github.io/goal](https://colegion.github.io/goal).
-To compile and view the site locally do the following:
+### Installation
+The site is powered by [Jekyll](https://jekyllrb.com). To compile and view it locally do the following:
 
 ```bash
-# Install the Jekyll and all dependencies.
+# Install the Jekyll and all necessary dependencies.
 gem install jekyll redkarpet pygments
 
-# Clone the "gh-pages" branch and locate it inside "docs/" dir.
-git clone -b gh-pages git@github.com:colegion/goal.git docs
+# Clone this repository.
+git clone git@github.com:goaltools/goaltools.pw.git
 
-# Move to the newly create directory.
-cd docs/
+# Move to the newly created directory.
+cd ./goaltools.pw/
 
-# Start the server with docs.
+# Start the server.
 jekyll serve --baseurl ""
 ```
 
 The docs will be available on [localhost:4000](http://localhost:4000).
+
+### Status
+[![Build Status](https://travis-ci.org/goaltools/goaltools.pw.svg?branch=master)](https://travis-ci.org/goaltools/goaltools.pw)
 
 ### License
 Distributed under the BSD 2-clause "Simplified" License unless otherwise noted.
