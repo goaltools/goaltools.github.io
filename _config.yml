@@ -74,7 +74,7 @@ manual:
 
 safe: true
 lsi: false
-markdown: redcarpet
+markdown: kramdown
 highligher: pygments
 redcarpet:
   extensions:

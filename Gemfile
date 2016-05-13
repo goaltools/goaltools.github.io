@@ -2,5 +2,5 @@ source "https://rubygems.org"
 
 gem "jekyll"
 gem "html-proofer"
-gem "redcarpet"
+gem "kramdown"
 gem "pygments.rb"
