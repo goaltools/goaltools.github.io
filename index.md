@@ -1,6 +1,6 @@
 ---
 layout: index
-title: High productivity web-development in Go language
+title: A set of tools for high productivity web-development in Go language
 ---
 # Getting started
 

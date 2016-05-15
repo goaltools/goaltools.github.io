@@ -5,7 +5,7 @@ menu:
   about:
     name: About
     url: /
-    icon: sun
+    icon: setting
   manual:
     name: Manual
     url: /manual/index.html

@@ -1,10 +1,7 @@
-<header class="ui inverted vertical masthead center aligned segment" id="{{ page.layout }}_layout">
-	<div class="ui text container">
-		<h1 class="ui header">
-			<a href="{{ site.baseurl }}/" class="ui orange header">
-				{{ site.title }}
-			</a>
-		</h1>
+<header class="ui vertical masthead center aligned segment">
+	<div class="ui text container" id="logo">
+		<a href="{{ site.baseurl }}/">
+			<img src="{{ site.baseurl }}/static/images/logo.png" alt="Goal Tools" height="48">
+		</a>
 	</div>
-	{% if page.title and page.layout == "about" %}<h2>{{ page.title }}</h2>{% endif %}
 </header>

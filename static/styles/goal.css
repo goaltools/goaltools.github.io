@@ -27,23 +27,12 @@ h5 {
 h6 {
 	font-size: 0.8em !important;
 }
+#logo {
+	margin-top: 1.9em;
+}
 .masthead.segment {
+	background-color: #f0f0f0 !important;
 	min-height: 9.7em;
-}
-.masthead.segment h1.ui.header {
-	margin-top: 1em;
-}
-#about_layout.masthead.segment {
-	min-height: 22em;
-}
-#about_layout.masthead h1.ui.header {
-	margin-top: 1.2em;
-	font-size: 3.2em !important;
-	font-weight: normal;
-}
-#about_layout.masthead h2 {
-	font-size: 1.4em !important;
-	font-weight: normal;
 }
 #menu {
 	margin-bottom: 2em;
@@ -57,4 +46,4 @@ blockquote {
 	border-left: 0.2em solid #f2711c;
 	border-right: 0.2em solid #f2711c;
 	border-radius: 0.285714rem;
-e
+}
