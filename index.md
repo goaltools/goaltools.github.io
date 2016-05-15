@@ -2,18 +2,44 @@
 layout: index
 title: A set of tools for high productivity web-development in Go language
 ---
-# Getting started
+## Overview
 
-```bash
-# Step 1: Install Goal toolkit.
-go get -u github.com/colegion/goal
+### Controllers and Actions
+```go
+// Application is a sample controller.
+type Application struct {
+	*Controller
+}
 
-# Step 2: Create a new skeleton application.
-goal new github.com/$username/$project
+// Greet is a demo action that gets name of a user and renders
+// a greeting page.
+func (c *Application) Greet(name string) http.Handler {
+	c.Context["name"] = name
+	return c.Render()
+}
+```
 
-# Step 3: Start a watcher / task runner.
-goal run github.com/$username/$project
+### Routes
+```go
+// @get /
+func (c *Application) Index() http.Handler {
+	...
+}
 
-# Step 4: Start making changes to the app
-# generated at Step 1.
+// @post /signin/:method
+func (c *Application) SignIn(id method) http.Handler {
+	...
+}
+```
+
+### Reverse routes
+```go
+// Profile is an action that redirects a user to Sign In page
+// if he/she is not authorized.
+func (c *Account) Profile(id, page int) http.Handler {
+	if c.notAuthorized() {
+		return c.Redirect(routes.Account.SignIn()) // Reverse route to the Sign In page.
+	}
+	...
+}
 ```

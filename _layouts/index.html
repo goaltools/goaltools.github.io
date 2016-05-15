@@ -1,100 +1,50 @@
 ---
 layout: about
-customHeader: true
 ---
-<div class="ui stackable two column grid">
-
-	<div class="ten wide column">
+<div class="ui stackable one column grid">
+	<section class="sixteen wide column">
 		<h1 class="ui header">
-			Meet Goal
-			<div class="ui sub header">Free and Open-Source Toolkit</div>
+			Meet Goal Tools
+			<div class="ui sub header">
+				A set of Open-Source tools for high productivity web-development in Go language
+			</div>
 		</h1>
 		<div class="ui two doubling cards">
 			<div class="card">
 				<div class="center aligned content">
-					<span class="ui orange header">
-						<i class="line chart icon"></i>
-						High Productivity
+					<span class="ui blue header">
+						<i class="line settings icon"></i>
+						Code Generation
 					</span>
 					<p>
-						Goal is a set of utilities that let you develop apps in Go blazingly fast.
-						Focus on things that matter, we'll take care of the rest.
+						Goal Tools rely on the concept of code generation rather than runtime reflection.
+						As a result <strong>better type safety</strong> and <strong>productivity
+						of the end developer</strong> are provided.
+						Catch errors when you are building not running your app.
+						And focus on things that matter, Goal will take care of the rest.
 					</p>
 				</div>
 			</div>
 			<div class="card">
 				<div class="center aligned content">
-					<span class="ui orange header">
-						<i class="dashboard icon"></i>
-						High Performance
+					<span class="ui blue header">
+						<i class="line puzzle icon"></i>
+						Customizability
 					</span>
 					<p>
-						Code generation and good default components
-						(such as <a href="https://github.com/naoina/denco">denco router</a> based on double-array)
-						make your web applications very fast.
+						Components of Goal Tools are built with <strong>compatibility with the standard library</strong>
+						in mind.
+						Moreover they are <strong>loosely coupled</strong> and thus can be easily replaced with
+						alternative implementations.
+						The result is you can use your own router, template system, reverse routes generator
+						or any other component.
 					</p>
 				</div>
-			</div>
-			<div class="card">
-				<div class="center aligned content">
-					<span class="ui orange header">
-						<i class="flag icon"></i>
-						Type Safety
-					</span>
-					<p>
-						Catch errors when you are compiling your app not during runtime.
-						The way Goal works will help you identify problems
-						in code early.
-					</p>
-				</div>
-			</div>
-			<div class="card">
-				<div class="center aligned content">
-					<span class="ui orange header">
-						<i class="settings icon"></i>
-						100% Customizability
-					</span>
-					<p>
-						It is possible to customize every single thing.
-						Wanna bring your own router, template system, or any other component?
-						That's easy.
-					</p>
-				</div>
-			</div>
-			<div class="sixteen wide card">
-				<div class="center aligned content">
-					<span class="ui orange header">
-						<i class="puzzle icon"></i>
-						Compatibility
-					</span>
-					<p>
-						Instead of reinventing the wheel
-						Goal relies on builtin <code>go generate</code> subcommand and
-						is fully compatable with the standard library.
-					</p>
-				</div>
-			</div>
-			<div class="sixteen wide card">
-				<div class="center aligned content">
-					<span class="ui orange header">
-						<i class="help circle icon"></i>
-						Learn more
-					</span>
-					<p>
-						For more info about Goal
-						read...
-					</p>
-				</div>
-				<a class="ui bottom attached large orange button" href="{{ site.baseurl }}{{ site.menu.manual.url }}">
-					<i class="book icon"></i>
-					{{ site.menu.manual.name }}
-				</a>
 			</div>
 		</div>
-	</div>
-
-	<section class="six wide column">
-		{{ content }}
 	</section>
 
+	<section class="sixteen wide column">
+		{{ content }}
+	</section>
 </div>

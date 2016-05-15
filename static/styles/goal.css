@@ -6,8 +6,12 @@
 	z-index: 40000;
 }
 strong {
-	color: #f2711c;
+	color: #2185d0;
 	font-style: italic;
+}
+h3, h4, h5, h6 {
+	color: #2185d0;
+	margin-top: 0 !important;
 }
 h1 {
 	font-size: 1.8em !important;
@@ -16,10 +20,10 @@ h2 {
 	font-size: 1.6em !important;
 }
 h3 {
-	font-size: 1.4em !important;
+	font-size: 1.3em !important;
 }
 h4 {
-	font-size: 1.2em !important;
+	font-size: 1.1em !important;
 }
 h5 {
 	font-size: 1em !important;
