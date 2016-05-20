@@ -11,7 +11,7 @@ links:
     url: /manual/handlers/actions.html
 ---
 # Controllers
-A controller is any `struct` type that has [magic methods](#magic-method),
+A controller is any `struct` type that has [magic methods](#magic-methods),
 [actions](actions.html), and/or [magic actions](actions.html#magic-actions).
 
 ```go

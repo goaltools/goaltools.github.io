@@ -41,4 +41,4 @@ goal run path/to/your/project
 ```
 
 Gongratulations, your skeleton app is ready and running. Start making changes.
-Open [`http://127.0.0.1:8080`](http://127.0.0.1:8080) to view results.
+Open `http://127.0.0.1:8080` to view results.
