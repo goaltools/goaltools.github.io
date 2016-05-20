@@ -43,5 +43,21 @@ func (c *Application) SignIn(method int) http.Handler {
 ```
 
 ### Hot Reloader
+> Tool `goal run` uses the rules from `goal.yml` file in the root of your project
+> to compile, start your app, and hot reload it when some changes are made to the code.
+
 ```yaml
+init:
+  - npm install coffeescript # Install CoffeeScript.
+watch:
+  ./controllers*:            # Watch "./controllers" and its subdirectories.
+    - /run buildApp          # Rebuild the app on change.
+    - /single startApp       # Restart the previously started instance of app.
+  ./qwerty:
+    - /pass # Do nothing as we haven't decided yet what to do here.
+buildApp:
+  # Commands for building the project.
+  - go build -o ./bin/run:EXT github.com/colegion/sample
+startApp:
+  - ./bin/run:EXT # A command for start of the app.
 ```
