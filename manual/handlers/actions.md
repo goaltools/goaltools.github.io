@@ -7,6 +7,7 @@ links:
     name: Everything about controllers
     url: /manual/handlers/controllers.html
 ---
+# Actions
 Action is a [controller](controllers.html)'s exported method that returns an
 `http.Handler` (of `net/http`) as its first result.
 
