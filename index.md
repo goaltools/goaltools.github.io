@@ -1,10 +1,14 @@
 ---
 layout: index
-title: A set of tools for high productivity web-development in Go language
+title: High productivity web-development in Go language
 ---
 ## Overview
 
 ### Controllers and Actions
+> Tool `goal generate handlers` generates standard HTTP handler functions out
+> of your controllers and actions. The result is a separate package that is compatible
+> with the `net/http` MUX.
+
 ```go
 // Application is a sample controller.
 type Application struct {
@@ -19,27 +23,25 @@ func (c *Application) Greet(name string) http.Handler {
 }
 ```
 
-### Routes
+### Routes & Reverse Routes
+> Tool `goal generate routes` scans your HTTP handler functions & their
+> comments and produces 2 separate packages:
+> the one that provides a slice of routes and handler functions associated
+> with them; and a package that can be used to return URN by
+> controller & action name in a type safe manner.
+
 ```go
-// @get /
+// @get /home
 func (c *Application) Index() http.Handler {
-	...
+	return c.Redirect(routes.Account.SignIn(123))
 }
 
 // @post /signin/:method
-func (c *Application) SignIn(id method) http.Handler {
+func (c *Application) SignIn(method int) http.Handler {
 	...
 }
 ```
 
-### Reverse routes
-```go
-// Profile is an action that redirects a user to Sign In page
-// if he/she is not authorized.
-func (c *Account) Profile(id, page int) http.Handler {
-	if c.notAuthorized() {
-		return c.Redirect(routes.Account.SignIn()) // Reverse route to the Sign In page.
-	}
-	...
-}
+### Hot Reloader
+```yaml
 ```

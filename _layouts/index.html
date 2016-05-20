@@ -1,13 +1,13 @@
 ---
 layout: about
 ---
-<div class="ui stackable one column grid">
+<div class="ui stackable two column grid">
 	<section class="sixteen wide column">
 		<h1 class="ui header">
 			Meet Goal Tools
-			<div class="ui sub header">
+			<span class="ui display-block sub header">
 				A set of Open-Source tools for high productivity web-development in Go language
-			</div>
+			</span>
 		</h1>
 		<div class="ui two doubling cards">
 			<div class="card">
@@ -34,7 +34,7 @@ layout: about
 					<p>
 						Components of Goal Tools are built with <strong>compatibility with the standard library</strong>
 						in mind.
-						Moreover they are <strong>loosely coupled</strong> and thus can be easily replaced with
+						Plus they are <strong>loosely coupled</strong> and thus can be easily replaced with
 						alternative implementations.
 						The result is you can use your own router, template system, reverse routes generator
 						or any other component.
@@ -44,7 +44,12 @@ layout: about
 		</div>
 	</section>
 
-	<section class="sixteen wide column">
+	<section class="eleven wide column">
 		{{ content }}
+	</section>
+
+	<section class="five wide column">
+		<h2>Getting Started</h2>
+		{% include getstart.html %}
 	</section>
 </div>
